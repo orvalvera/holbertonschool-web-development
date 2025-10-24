@@ -1,0 +1,440 @@
+/* Base and variables (Templates) */
+
+:root {
+  --color-primary: #c271ff;
+  --color-dark-navy: #071629;
+  --color-white: #ffffff;
+  --color-text-primary: #071629;
+  --color-text-secondary: rgba(7, 22, 41, 0.5);
+  --font-text: "Source Sans Pro", sans-serif;
+}
+
+body {
+  margin: 0;
+  font-family: var(--font-text);
+  color: var(--color-text-primary);
+  background: var(--color-white);
+}
+
+h1,
+h2,
+h3,
+p,
+blockquote {
+  margin: 0;
+}
+
+button {
+  border: none;
+  cursor: pointer;
+  font-family: var(--font-text);
+}
+
+.container {
+  max-width: 1228px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.highlight {
+  color: var(--color-primary);
+  font-weight: 700;
+}
+
+.title-normal-weight {
+  font-weight: 400;
+}
+
+/* Header */
+
+.Header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding-top: 35px;
+  box-sizing: border-box;
+}
+
+.Header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1103px;
+}
+
+.Header-logo img {
+  width: 167px;
+  height: 30px;
+}
+
+.Header-nav a {
+  color: var(--color-white);
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 12px;
+  margin-left: 45px;
+  text-transform: uppercase;
+}
+
+/* Main Section */
+
+.Banner {
+  background: url("images/Background.png") center/cover no-repeat;
+  color: var(--color-white);
+  text-align: center;
+  padding-top: 200px;
+  height: 1093px;
+  box-sizing: border-box;
+}
+
+.Banner .container {
+  max-width: 1009px;
+}
+
+.Banner-title {
+  font-weight: 700;
+  font-size: 120px;
+  line-height: 151px;
+}
+
+.Banner-tags {
+  font-weight: 700;
+  font-size: 16px;
+  margin-top: 15px;
+  word-spacing: 20px;
+  text-transform: uppercase;
+}
+
+.Banner-button {
+  background: var(--color-primary);
+  color: var(--color-white);
+  border-radius: 22px;
+  padding: 14px 40px;
+  font-weight: 600;
+  font-size: 14px;
+  box-shadow: 0 2px 20px rgba(0, 0, 0, 0.5);
+  margin-top: 45px;
+  text-transform: uppercase;
+}
+
+.Banner-pros-title {
+  margin-top: 170px;
+  margin-bottom: 60px;
+  font-weight: 700; /* Base is bold */
+  font-size: 32px;
+}
+
+.Pros-gallery {
+  display: flex;
+  justify-content: space-between;
+}
+
+.Pro-card {
+  width: 150px;
+}
+
+.Pro-card img {
+  width: 150px;
+  height: 150px;
+}
+
+.Pro-card h3 {
+  font-weight: 900;
+  font-size: 18px;
+  margin-top: 12px;
+  margin-bottom: 8px;
+}
+
+.Pro-card p {
+  font-style: italic;
+  font-size: 16px;
+}
+
+/* Quote Section */
+
+.Quote {
+  background: var(--color-primary);
+  color: var(--color-white);
+  padding: 100px 0;
+  height: 392px;
+  box-sizing: border-box;
+}
+.Quote-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 943px;
+  gap: 53px;
+}
+.Quote-image {
+  width: 160px;
+  height: 160px;
+}
+.Quote-content {
+  width: 730px;
+}
+.Quote-content blockquote {
+  font-size: 22px;
+  line-height: 34px;
+  font-weight: 400;
+}
+.Quote-author {
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 34px;
+  margin-top: 25px;
+}
+.Quote-title {
+  font-style: italic;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 34px;
+}
+
+/* Tutorials Section */
+
+.Tutorials {
+  padding: 90px 0;
+  background: var(--color-white);
+}
+
+.Tutorials-title {
+  font-family: var(--font-text);
+  font-weight: 300;
+  font-size: 32px;
+  color: var(--color-text-primary);
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.Tutorials-title .highlight {
+  font-weight: 700;
+}
+
+.Tutorials-gallery {
+  display: flex;
+  justify-content: space-between;
+}
+
+.Tutorial-card {
+  width: 255px;
+  background: var(--color-white);
+  box-shadow: 0px 2px 4px rgba(7, 22, 41, 0.178458);
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+.Tutorial-card > img {
+  width: 100%;
+  height: 154px;
+  border-radius: 5px 5px 0 0;
+}
+
+.Tutorial-card h2 {
+  font-weight: 700;
+  font-size: 16px;
+  margin-top: 15px;
+  padding: 0 15px;
+}
+
+.Tutorial-description {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  color: var(--color-text-secondary);
+  margin-top: 10px;
+  padding: 0 15px;
+}
+
+.Tutorial-author {
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+  padding: 0 15px;
+}
+
+.Tutorial-author img {
+  width: 30px;
+  height: 30px;
+  margin-right: 10px;
+}
+
+.Tutorial-author h3 {
+  font-weight: 600;
+  font-size: 14px;
+  color: var(--color-primary);
+}
+
+.Tutorial-rating {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 15px;
+  padding: 0 15px 15px 15px;
+}
+
+.Tutorial-stars {
+  display: flex;
+  gap: 4px;
+}
+
+.Tutorial-stars img {
+  width: 15px;
+  height: 15px;
+}
+
+.Tutorial-time {
+  font-weight: 600;
+  font-size: 14px;
+  color: var(--color-primary);
+}
+
+/* Membership Section */
+
+.Membership {
+  background: var(--color-dark-navy);
+  color: var(--color-white);
+  padding: 80px 0;
+  height: 502px;
+  box-sizing: border-box;
+}
+
+.Membership-container {
+  max-width: 1112px;
+  text-align: center;
+}
+
+.Membership-title {
+  font-weight: 700;
+  font-size: 32px;
+}
+
+.Membership-gallery {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 55px;
+}
+
+.Membership-item {
+  width: 257px;
+}
+
+.Membership-item img {
+  width: 44px;
+  height: 35px;
+}
+
+.Membership-item h2 {
+  font-weight: 600;
+  font-size: 18px;
+  margin-top: 18px;
+}
+
+.Membership-item p {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 26px;
+  margin-top: 10px;
+}
+
+.Membership-button {
+  background: var(--color-primary);
+  color: var(--color-white);
+  border-radius: 22px;
+  padding: 14px 40px;
+  font-weight: 600;
+  font-size: 14px;
+  box-shadow: 0 2px 20px rgba(0, 0, 0, 0.5);
+  margin-top: 50px;
+  text-transform: uppercase;
+}
+
+/* FAQ Section */
+
+.FAQ {
+  padding: 90px 0;
+}
+
+.FAQ .container {
+  max-width: 920px;
+}
+
+.FAQ-title {
+  font-weight: 300;
+  font-size: 60px;
+  text-align: center;
+  margin-bottom: 80px;
+}
+
+.FAQ-grid {
+  display: flex;
+  justify-content: space-between;
+}
+
+.FAQ-column {
+  width: 350px;
+}
+
+.FAQ-item:first-child {
+  margin-bottom: 60px;
+}
+
+.FAQ-item h2 {
+  font-weight: 700;
+  font-size: 16px;
+  margin-bottom: 18px;
+}
+
+.FAQ-item p {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  color: var(--color-text-secondary);
+}
+
+/* Footer */
+
+.Footer {
+  background: var(--color-dark-navy);
+  color: var(--color-white);
+  height: 249px;
+  padding-top: 90px;
+  box-sizing: border-box;
+}
+
+.Footer-container {
+  max-width: 1103px;
+}
+
+.Footer-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.Footer-logo {
+  width: 167px;
+  height: 30px;
+}
+
+.Footer-social {
+  display: flex;
+  gap: 20px;
+}
+
+.Footer-social img {
+  width: 30px;
+  height: 30px;
+}
+
+.Footer-copyright {
+  font-weight: 400;
+  font-size: 12px;
+  color: var(--color-white);
+  opacity: 0.35;
+  text-align: center;
+  margin-top: 76.5px;
+}
